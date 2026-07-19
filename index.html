@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OWT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Onest:wght@100..900&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav">
+            <a class="header__brand" href="#">OWT</a>
+            <ul class="nav__links">
+                <li><a href="#features">возможности</a></li>
+                <li><a href="#pricing">цены</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a class="btn btn--ghost btn--sm header__cta" href="#pricing">попробовать</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <canvas id="mesh"></canvas>
+        <div class="grain"></div>
+
+        <div class="container hero__content">
+            <div class="hero__info">
+                <h1 class="title h1">OWT Rewriter</h1>
+                <h2 class="title h2">переписывайте контент с помощью ИИ, а не вручную</h2>
+                <h3 class="title h3">сервис автоматически анализирует Telegram-каналы,
+                    изображения и стиль автора, создавая готовые публикации за секунды</h3>
+
+                <div class="hero__interaction">
+                    <a class="btn btn--primary" href="#pricing">попробовать</a>
+                    <a class="btn btn--ghost" href="#">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container features__content">
+
+            <div class="title title__sections">возможности бота</div>
+            <p class="title title__descr">все основные возможности этого продукта,<br> <span class="muted-span">которые
+                    нужно знать</span></p>
+
+            <ul class="features__list">
+                <li class="feature">
+                    <h3 class="title feature__title"><span class="list-number"> 1 </span>рерайт ✍️</h3>
+                    <ul class="feature__points">
+                        <li><span>понимает любой формат</span> — текст, пересланный пост, фото с подписью или вообще
+                            голая картинка:
+                            то есть
+                            пост соберется из чего угодно</li>
+                        <li><span>видит изображения</span> — читает скриншоты, цитаты и инфографику, факты с картинки
+                            попадают в пост
+                        </li>
+                        <li><span>правки одной репликой</span> — ответь "сделай короче" или "добавь про сроки", бот
+                            доработает именно
+                            этот вариант, а не напишет новый</li>
+                        <li>
+                            <span>бесконечные варианты</span> — кнопка "Ещё вариант" и мгновенная смена стиля у готового
+                            поста
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="feature">
+                    <h3 class="title feature__title"><span class="list-number"> 2 </span>стили 🧬</h3>
+                    <ul class="feature__points">
+                        <li><span>клон стиля по одной ссылке</span> — бот изучает канал и пишет как его автор: лексика,
+                            эмодзи,
+                            форматирование, <span class="underline-span">вплоть до точек и кавычек</span></li>
+                        <li><span>библиотека шаблонов</span> — храни стили нескольких каналов и переключайся в один клик
+                        </li>
+                        <li>
+                            <span>своя подпись</span> — твой хвост с твоей ссылкой автоматически под каждым постом
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="feature">
+                    <h3 class="title feature__title"><span class="list-number"> 3 </span>автопилот 📡</h3>
+                    <ul class="feature__points">
+                        <li><span>каналы доноры</span> — бот сам замечает их новые посты и присылает готовые рерайты
+                        </li>
+                        <li><span>полное доверие</span> — режим авто-публикации: посты сами
+                            уходят в твой канал, <span class="underline-span">у тебя
+                                5 минут на «отменить» или «отправить сразу»</span>
+                        </li>
+                        <li>
+                            <span>публикация в один клик</span> — свои каналы подключаются пересылкой поста, фото едет
+                            вместе с текстом
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="feature">
+                    <h3 class="title feature__title"><span class="list-number"> 4 </span>
+                        <div class="feature__fourth"><span class="feature__title-secondary">и самое главное
+                                — </span>чистота контента 🛡</div>
+                    </h3>
+                    <ul class="feature__points">
+                        <li><span>фильтр рекламы</span> — интеграции и розыгрыши доноров отсеиваются, новости проходят
+                        </li>
+                        <li><span>ноль чужих следов</span> — ссылки на источник, его самопиар и атрибуция вычищаются, в
+                            заголовке — настоящий первоисточник
+
+                        </li>
+                        <li>
+                            <span>вотермарки не проедут</span> — фото с символикой донора публикуется без фото
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="title title__sections">цены</div>
+            <p class="title title__descr">идеально сбалансированные цены на тарифы, <br><span class="muted-span">которые
+                    подойдут всем</span>
+            </p>
+        </div>
+
+        <ul class="pricing__grid">
+            <li class="plan">
+                <div class="plan__body">
+                    <p class="plan__name">старт</p>
+                    <div class="plan__price">
+                        <span class="plan__amount">5 $</span>
+                        <span class="plan__period">за 30 дней</span>
+                    </div>
+                    <ul class="plan__features">
+                        <li>рерайт постов без лимита</li>
+                        <li>1 стиль автора</li>
+                        <li>ручная публикация</li>
+                        <li>поддержка в чате</li>
+                    </ul>
+                </div>
+                <a class="btn btn--ghost plan__cta" href="#">выбрать старт</a>
+            </li>
+
+            <li class="plan plan--featured">
+                <div class="plan__body">
+                    <p class="plan__name">про <span class="plan__badge">лучшая выгода</span></p>
+                    <div class="plan__price">
+                        <span class="plan__amount">10 $</span>
+                        <span class="plan__period">за 30 дней</span>
+                    </div>
+                    <ul class="plan__features">
+                        <li>все из тарифа «старт»</li>
+                        <li>более функциональный автопилот</li>
+                        <li>безлимит стилей</li>
+                        <li>более качественный фильтр рекламы и чистка следов</li>
+                        <li>приоритетная поддержка</li>
+                    </ul>
+                </div>
+                <a class="btn btn--primary plan__cta" href="#">выбрать про</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="title title__sections">faq</div>
+            <p class="title title__descr">ещё есть вопросы? <br><span class="muted-span">у нас уже есть ответы</span>
+            </p>
+
+            <div class="faq__list">
+                <details class="faq__item">
+                    <summary class="faq__q">
+                        <span>что делает OWT Rewriter и кому он подойдёт?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </summary>
+                    <div class="faq__a">
+                        <p>это Telegram-бот, который переписывает любые посты в стиле твоего канала, и может вести канал
+                            за тебя. подойдет админам каналов, сеткам, новостникам и SMM-щикам: всем, кто устал тратить
+                            часы на «переупаковку» контента, но не хочет терять свой авторский голос</p>
+                    </div>
+                </details>
+
+                <details class="faq__item">
+                    <summary class="faq__q">
+                        <span>как начать пользоваться и нужно ли уметь программировать?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </summary>
+                    <div class="faq__a">
+                        <p>нет, программировать не нужно вообще. открываешь бота в Telegram, жмешь /start и кидаешь ему
+                            текст — рерайт приходит через несколько секунд. настройка стиля — это одна ссылка на канал,
+                            подключение своего канала — одна пересылка поста. все остальное — кнопки</p>
+                    </div>
+                </details>
+
+                <details class="faq__item">
+                    <summary class="faq__q">
+                        <span>сколько стоит и есть ли бесплатный пробный период?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </summary>
+                    <div class="faq__a">
+                        <p>начать можно бесплатно: до ~20 постов в день — этого хватает, чтобы вести один активный
+                            канал, а если нужно больше — доступна подписка Pro: выше лимиты, больше каналов и доноров,
+                            приоритетная скорость</p>
+                    </div>
+                </details>
+
+                <details class="faq__item">
+                    <summary class="faq__q">
+                        <span>с какими форматами и языками постов работает бот?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </summary>
+                    <div class="faq__a">
+                        <p>текст, пересланные посты, фото с подписью и даже голая картинка без текста — бот прочитает
+                            скриншот, цитату или инфографику и соберёт пост из неё. язык — любой, на котором пишет твой
+                            канал: бот отвечает в том же языке и стиле, что и оригинал</p>
+                    </div>
+                </details>
+
+                <details class="faq__item">
+                    <summary class="faq__q">
+                        <span>как бот копирует стиль автора и насколько точно получается?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </summary>
+                    <div class="faq__a">
+                        <p>бот изучает посты канала и составляет «паспорт стиля»: лексику, юмор, структуру,
+                            форматирование, а плюсом замеряет механику письма статистически — эмодзи, длина постов... —
+                            и соблюдает её как железные правила. получается не «похоже по настроению», а копия почерка
+                            вплоть до знаков препинания = чем больше постов в канале, тем точнее</p>
+                    </div>
+                </details>
+
+                <details class="faq__item">
+                    <summary class="faq__q">
+                        <span>будет ли готовый текст уникальным и не считается ли это плагиатом?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </summary>
+                    <div class="faq__a">
+                        <p>бот не переставляет слова, а пишет текст заново: сохраняются факты, а формулировки, структура
+                            и подача — новые. стиль письма не является объектом авторского права, <span
+                                class="underline-span">но здравый смысл никто не отменял: эксклюзивы и авторские
+                                расследования этично публиковать со ссылкой на первоисточник</span></p>
+                    </div>
+                </details>
+
+                <details class="faq__item">
+                    <summary class="faq__q">
+                        <span>как работает автопилот и авто-публикация — это безопасно для канала?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </summary>
+                    <div class="faq__a">
+                        <p>ты добавляешь каналы-доноры — бот сам замечает их новые посты и присылает готовые рерайты. в
+                            режиме авто-публикации пост уходит в твой канал сам, но сначала ждёт окно отмены (по
+                            умолчанию 5 минут): успеешь остановить, поправить или отправить сразу. страховок несколько:
+                            реклама доноров отсеивается, сомнительные генерации не публикуются без твоего подтверждения,
+                            а любое твоё действие с постом мгновенно снимает его с автомата</p>
+                    </div>
+                </details>
+
+                <details class="faq__item">
+                    <summary class="faq__q">
+                        <span>какие права нужны боту в моём канале и где хранятся мои доступы?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </summary>
+                    <div class="faq__a">
+                        <p>боту нужно единственное право — «Публикация сообщений» в твоём канале. он не видит
+                            подписчиков, не читает чужие сообщения и не может ничего удалить без твоей команды. пароли и
+                            доступы от аккаунта не нужны вовсе — всё работает через официальный Telegram Bot API.
+                            отключить бота можно в один клик, просто убрав его из админов </p>
+                    </div>
+                </details>
+
+                <details class="faq__item">
+                    <summary class="faq__q">
+                        <span>как бот убирает рекламу, чужие ссылки и водяные знаки с фото?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </summary>
+                    <div class="faq__a">
+                        <p>встроенный ИИ-редактор понимает цель каждого элемента поста: рекламные интеграции и розыгрыши
+                            доноров отсеиваются целиком, самопиар и ссылки на источник вычищаются из текста, а в
+                            заголовке указывается настоящий первоисточник, а не канал-донор. фото бот тоже проверяет:
+                            если на картинке вотермарка или логотип донора — пост уйдёт без нее. при этом новости про
+                            рекламу или скандалы фильтр не трогает — он различает тему и цель</p>
+                    </div>
+                </details>
+
+                <details class="faq__item">
+                    <summary class="faq__q">
+                        <span>есть ли лимиты на посты и можно ли подключить несколько каналов?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </summary>
+                    <div class="faq__a">
+                        <p>на бесплатном тарифе — один канал, пара доноров и дневной лимит рерайтов. на Pro — несколько
+                            каналов и доноров, увеличенные лимиты и приоритетная модель для максимального качества.
+                            лимиты обновляются каждый день, неиспользованное не сгорает</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/mesh.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
